@@ -8,7 +8,7 @@ const CarouselSkeletonCard = () => {
             <div className="post-entry lg:flex mb-4">
                 {/* Skeleton for Thumbnail */}
                 <div className="thumbnail mb-4 lg:mb-0 lg:mr-5 flex-shrink-0">
-                    <Skeleton height={321} width={380}
+                    <Skeleton height={321} width={360}
                               className="rounded w-full object-cover"/>
                 </div>
 
