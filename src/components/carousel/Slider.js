@@ -1,5 +1,5 @@
 // components/Slider/Slider.js
-import React, {useCallback, useEffect, useRef} from 'react';
+import {useCallback, useEffect, useRef} from 'react';
 import TinySlider from 'tiny-slider-react';
 import 'tiny-slider/dist/tiny-slider.css';
 import Slide from './Slide';
@@ -42,14 +42,22 @@ const Slider = ({slides, activeIndex, setActiveIndex}) => {
     }, [handleSlideChange]);
 
     return (
-        <div className="posts-slide-wrap relative">
-            <TinySlider settings={settings} ref={sliderRef}>
-                {slides.map((slide, index) => (
-                    <Slide key={index} slide={slide}/>
-                ))}
-            </TinySlider>
-            <NavigationDots slides={slides} activeIndex={activeIndex}
-                            goToSlide={(index) => sliderRef.current.slider.goTo(index)}/>
+        <div className="flex">
+            <div className="w-full">
+                <div className="posts-slide-wrap">
+                    <div className="posts-slide" id="posts-slide">
+                        <div className="posts-slide-wrap relative">
+                            <TinySlider settings={settings} ref={sliderRef}>
+                                {slides.map((slide, index) => (
+                                    <Slide key={index} slide={slide}/>
+                                ))}
+                            </TinySlider>
+                            <NavigationDots slides={slides} activeIndex={activeIndex}
+                                            goToSlide={(index) => sliderRef.current.slider.goTo(index)}/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

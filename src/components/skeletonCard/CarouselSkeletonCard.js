@@ -1,4 +1,3 @@
-import React from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
@@ -30,7 +29,7 @@ const CarouselSkeletonCard = () => {
                     </p>
 
                     {/* Skeleton for Author Info */}
-                    <a className="post-author flex items-center text-sm text-gray-600" href="#">
+                    <a className="post-author flex items-center text-sm text-gray-600" href="single.html">
                         <div className="author-pic w-12 h-12 mr-2">
                             <Skeleton circle={true} height={48} width={48}/>
                         </div>

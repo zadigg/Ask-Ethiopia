@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Posts = () => {
     const posts = [
         {
@@ -72,7 +70,7 @@ const Posts = () => {
 
     return (
         <div className="py-28">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto">
                 <div className="grid lg:grid-cols-3 gap-20">
                     {posts.map((post, index) => (
                         <div key={index} className="post-entry flex flex-col">
@@ -91,7 +89,7 @@ const Posts = () => {
                                         <a
                                             key={catIndex}
                                             className="font-semibold text-gray-800 hover:text-gray-600"
-                                            href="#"
+                                            href="single.html"
                                         >
                                             {category}
                                             {catIndex < post.categories.length - 1 && ', '}
@@ -105,7 +103,7 @@ const Posts = () => {
                                     </a>
                                 </h2>
                                 <p className="mb-5">{post.description}</p>
-                                <a className="flex items-center" href="#">
+                                <a className="flex items-center" href="single.html">
                                     <div className="flex-shrink-0">
                                         <img
                                             alt="Author"

@@ -1,4 +1,3 @@
-import React from 'react';
 import {FaHamburger} from "react-icons/fa";
 
 const BurgerMenuButton = ({toggleMenu}) => (

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SearchForm = () => (
     <div className="w-full md:w-1/4 flex md:order-1">
         <form action="#" className="relative w-full">

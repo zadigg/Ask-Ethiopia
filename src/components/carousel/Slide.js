@@ -1,36 +1,34 @@
-// components/Slider/Slide.js
-import React from 'react';
-
 const Slide = ({slide}) => (
-    <div className="item">
-        <div className="post-entry lg:flex mb-4">
-            <div className="thumbnail mb-4 lg:mb-0 lg:mr-5 flex-shrink-0">
+    <div className="item mb-10">
+        <div className="post-entry lg:flex">
+            <div className="lg:mr-5 mb-4 lg:mb-0 flex-shrink-0">
                 <a href="single.html">
                     <img
-                        alt="Image"
-                        className="img-fluid rounded w-full md:h-[321px] lg:h-[384px] object-cover"
+                        alt="carousel slider image"
+                        className="img-fluid rounded-lg w-full lg:w-[440px] h-auto"
                         src={slide.image}
                     />
                 </a>
             </div>
-            <div className="content flex flex-col justify-center">
-                <div className="post-meta mb-3 text-sm text-gray-600">
-                    <a className="category font-semibold" href="#">
+            <div className="content align-self-center flex flex-col justify-center">
+                <div className="post-meta mb-3">
+                    <a className="category text-gray-800 font-semibold hover:text-gray-600 mr-1"
+                       href="single.html">
                         {slide.category}
                     </a>{' '}
-                    &mdash; <span className="date">{slide.date}</span>
+                    &mdash; <span className="date text-gray-600 ml-2">{slide.date}</span>
                 </div>
-                <h2 className="text-xl font-bold mb-2">
-                    <a href="single.html">{slide.title}</a>
+                <h2 className="heading text-2xl font-bold mb-3">
+                    <a href="single.html" className="hover:underline">{slide.title}</a>
                 </h2>
-                <p className="mb-4">{slide.description}</p>
-                <a className="post-author flex items-center text-sm text-gray-600" href="#">
-                    <div className="author-pic w-12 h-12 mr-2">
-                        <img alt="Image" className="rounded-full" src={slide.author.image}/>
+                <p className="mb-5">{slide.description}</p>
+                <a className="post-author flex items-center hover:text-gray-800" href="single.html">
+                    <div className="author-pic mr-3">
+                        <img alt="carousel author image" className="w-12 h-12 rounded-full" src={slide.author.image}/>
                     </div>
                     <div className="text">
-                        <strong className="block font-semibold">{slide.author.name}</strong>
-                        <span className="text-xs">{slide.author.title}</span>
+                        <strong className="block text-gray-900 font-bold">{slide.author.name}</strong>
+                        <span className="text-sm text-gray-600">{slide.author.title}</span>
                     </div>
                 </a>
             </div>

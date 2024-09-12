@@ -1,5 +1,5 @@
 // App.js
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Header from './components/Header/Header';
 import Slider from './components/carousel/Slider';
 import CarouselSkeletonCard from './components/skeletonCard/CarouselSkeletonCard';
@@ -19,11 +19,11 @@ const App = () => {
     return (
         <div className="p-5">
             <Header/>
-            <div className="section pt-5 pb-0">
-                <div className="container mx-auto px-4">
-                    <div className="flex justify-center mb-5">
-                        <div className="text-center">
-                            <h2 className="text-3xl font-bold">Trending</h2>
+            <div className="section pt-20 pb-0">
+                <div className="container mx-auto px-6">
+                    <div className="flex justify-center mb-20">
+                        <div className="lg:w-2/3 text-center">
+                            <h2 className="text-4xl font-bold">Trending</h2>
                         </div>
                     </div>
                     {loading ? (

@@ -1,6 +1,3 @@
-// components/Slider/NavigationDots.js
-import React from 'react';
-
 const NavigationDots = ({slides, activeIndex, goToSlide}) => (
     <div className="flex justify-center mt-4">
         {slides.map((_, index) => (
