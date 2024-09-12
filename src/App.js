@@ -3,7 +3,8 @@ import React, {useEffect, useState} from 'react';
 import Header from './components/Header/Header';
 import Slider from './components/carousel/Slider';
 import CarouselSkeletonCard from './components/skeletonCard/CarouselSkeletonCard';
-import slides from './data/slidesData'; // Import the slides data
+import Posts from "./components/body/Posts";
+import trendingPosts from "./data/trendingPosts"; // Import the slides data
 
 const App = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -28,8 +29,10 @@ const App = () => {
                     {loading ? (
                         <CarouselSkeletonCard/>
                     ) : (
-                        <Slider slides={slides} activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+                        <Slider slides={trendingPosts} activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
                     )}
+
+                    <Posts/>
                 </div>
             </div>
         </div>

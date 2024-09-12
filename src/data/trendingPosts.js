@@ -1,10 +1,8 @@
-// data/slidesData.js
-import img from '../asset/img.png';
-import img2 from '../asset/img2.png';
+// data/trendingPosts.js
 
-const slides = [
+const trendingPosts = [
     {
-        image: img,
+        image: 'https://picsum.photos/800/600',
         category: 'Business, Travel',
         date: 'July 2, 2020',
         title: 'Your most unhappy customers are your greatest source of learning.',
@@ -12,11 +10,11 @@ const slides = [
         author: {
             name: 'Sergy Campbell',
             title: 'CEO and Founder',
-            image: 'https://picsum.photos/42/42',
+            image: 'https://picsum.photos/45/45',
         },
     },
     {
-        image: img2,
+        image: 'https://picsum.photos/800/600',
         category: 'Lifestyle, Wellness',
         date: 'July 3, 2020',
         title: 'Success is not the key to happiness. Happiness is the key to success.',
@@ -24,9 +22,9 @@ const slides = [
         author: {
             name: 'Amanda Jones',
             title: 'Editor-in-Chief',
-            image: 'https://picsum.photos/43/43',
+            image: 'https://picsum.photos/45/45',
         },
     },
 ];
 
-export default slides;
+export default trendingPosts;
