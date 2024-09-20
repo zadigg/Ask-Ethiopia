@@ -1,1 +1,0 @@
-"https://picsum.photos/200/300" -> to randomly generate image
