@@ -16,7 +16,7 @@ const TrendingSection = () => {
 
   return (
     <div className='section pb-0 pt-20'>
-      <div className='container mx-auto px-6'>
+      <div className='container mx-auto px-10'>
         <div className='mb-20 flex justify-center'>
           <div className='text-center lg:w-2/3'>
             <h2 className='text-4xl font-bold'>Trending</h2>

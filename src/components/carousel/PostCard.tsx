@@ -17,7 +17,7 @@ interface PostCardProps {
 
 const PostCard = ({ post }: PostCardProps) => {
   return (
-    <div className={'tns-item'} style={{ height: 'auto', padding: '20px' }}>
+    <div>
       <div className='post-entry lg:flex'>
         <div className='mb-4 flex-shrink-0 lg:mb-0 lg:mr-5'>
           <a href='single.html'>
