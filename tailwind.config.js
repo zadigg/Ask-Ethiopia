@@ -9,7 +9,18 @@ export default {
     './src/pages/**/components/**/*.{tsx,jsx,js,css,html}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'custom-sm': '1312px', // Custom screen size 1
+        'custom-md': '1530px', // Custom screen size 2
+        'custom-lg': '1588px', // Custom screen size 3
+      },
+      fontSize: {
+        '2xl': ['1.5rem', '2rem'], // Adjust line-height if needed
+        '3xl': ['1.875rem', '2.25rem'],
+        '4xl': ['2.25rem', '2.5rem'],
+      },
+    },
   },
   plugins: [],
 };

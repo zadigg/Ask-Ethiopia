@@ -8,9 +8,9 @@ interface CarouselItemProps {
 
 const CarouselItem = ({ post }: CarouselItemProps) => {
   return (
-    <div className='flex w-full flex-shrink-0 flex-col items-center lg:flex-row lg:items-stretch'>
+    <div className='flex w-full flex-shrink-0 flex-col items-center md:space-x-2 lg:flex-row lg:items-stretch'>
       {/* Image Section */}
-      <div className='mb-4 w-full lg:mb-0 lg:w-2/5'>
+      <div className='mb-4 w-full lg:mb-0 lg:w-[489px]'>
         <LazyLoad
           height={385}
           offset={100}
@@ -25,20 +25,19 @@ const CarouselItem = ({ post }: CarouselItemProps) => {
       </div>
 
       {/* Text Section */}
-      <div className='flex w-full flex-col justify-center lg:w-3/5 lg:pl-6'>
+      <div className='space-y- flex w-full flex-col justify-center pt-10  lg:w-3/5 '>
         <div className='mb-2'>
-          <span className='category font-semibold text-gray-800 hover:text-gray-600'>
+          <span className='category font-bold text-gray-800 hover:text-gray-600'>
             {post.category}
-          </span>
-          &mdash;
-          <span className='date ml-2 text-gray-600'>{post.date}</span>
+          </span>{' '}
+          &mdash; <span className='date ml-2  text-gray-400'>{post.date}</span>
         </div>
-        <h2 className='heading mb-2 text-2xl font-bold'>
+        <h2 className='heading mb-2 font-bold custom-sm:text-2xl custom-md:text-3xl custom-lg:text-4xl'>
           <a href='single.html' className='hover:underline'>
             {post.title}
           </a>
         </h2>
-        <p className='mb-4'>{post.description}</p>
+        <p className='mb-4 text-gray-400'>{post.description}</p>
         <a className='post-author flex items-center' href='single.html'>
           <div className='author-pic mr-3'>
             <img
