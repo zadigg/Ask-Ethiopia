@@ -19,7 +19,7 @@ const TrendingSection = () => {
       <div className='container mx-auto px-6'>
         <div className='mb-20 flex justify-center'>
           <div className='text-center lg:w-2/3'>
-            <h2 className='text-4xl font-bold'>Trending Test</h2>
+            <h2 className='text-4xl font-bold'>Trending</h2>
           </div>
         </div>
         {loading ? (
