@@ -18,7 +18,7 @@ const Header = () => {
       <Sidebar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
       {/* Main Navigation */}
-      <nav className='w-full border-b border-gray-200 py-5'>
+      <nav className='w-full border-b border-gray-200 py-3'>
         <div className='container mx-auto'>
           <div className='flex flex-wrap items-center justify-between'>
             {/* Logo */}
