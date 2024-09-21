@@ -13,20 +13,19 @@ const CarouselSkeleton = ({ height, count }: CarouselSkeletonProps) => {
       style={{ minHeight: '400px' }}
     >
       <div className='ease-[cubic-bezier(0.25, 0.8, 0.25, 1)] flex transition-transform duration-[700ms]'>
-        <div className='flex w-full flex-shrink-0 flex-col items-center px-4 lg:flex-row lg:items-stretch'>
+        <div className='flex w-full flex-shrink-0 flex-col items-center md:space-x-2 lg:flex-row lg:items-stretch'>
           {/* Image Skeleton */}
-          <div className='mb-4 w-full lg:mb-0 lg:w-2/5'>
+          <div className='mb-4 w-full lg:mb-0 lg:w-[489px]'>
             <Skeleton
-              height={350}
+              height={385}
               width={441}
-              className='img-fluid h-auto max-h-[385px] w-full rounded-lg object-cover lg:w-[441px]'
-            />{' '}
-            {/* Add rounded corners */}
+              className='img-fluid max-h-[386px] w-full rounded-lg lg:w-[441px]'
+            />
           </div>
 
           {/* Text Skeleton */}
-          <div className='flex w-full flex-col justify-center lg:w-3/5 lg:pl-6'>
-            {/* Category and Date */}
+          <div className='flex w-full flex-col justify-center pt-10 lg:w-3/5'>
+            {/* Category and Date Skeleton */}
             <div className='mb-2 flex'>
               <Skeleton width={150} height={20} className='mr-2' />{' '}
               {/* Category */}
@@ -34,15 +33,19 @@ const CarouselSkeleton = ({ height, count }: CarouselSkeletonProps) => {
             </div>
 
             {/* Title Skeleton */}
-            <Skeleton width='80%' height={30} className='mb-4' />
+            <Skeleton
+              width='80%'
+              height={30}
+              className='mb-2 font-bold custom-sm:text-2xl custom-md:text-3xl custom-lg:text-4xl'
+            />
 
             {/* Description Skeleton */}
             <Skeleton width='90%' height={15} className='mb-2' />
             <Skeleton width='85%' height={15} className='mb-2' />
             <Skeleton width='80%' height={15} className='mb-4' />
 
-            {/* Author Section */}
-            <div className='mt-4 flex items-center'>
+            {/* Author Section Skeleton */}
+            <div className='flex items-center'>
               <Skeleton circle={true} height={45} width={45} />
               <div className='ml-3'>
                 <Skeleton width={120} height={20} className='mb-1' />{' '}

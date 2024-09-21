@@ -1,7 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa6';
 
 const SocialIcons = () => (
-  <ul className='mr-auto flex space-x-2'>
+  <ul className='mr-auto flex space-x-5'>
     <li>
       <a href='single.html'>
         <span className='icon-twitter text-black hover:text-gray-700'>
