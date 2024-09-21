@@ -87,7 +87,7 @@ const Posts = () => {
 
   return (
     <div className='py-28'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-6'>
         <div className='grid gap-20 lg:grid-cols-3'>
           {posts.map(
             (
