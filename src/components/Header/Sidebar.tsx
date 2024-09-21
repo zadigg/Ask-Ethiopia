@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface SidebarProps {
   isMenuOpen: boolean;
   toggleMenu: () => void;
