@@ -1,6 +1,6 @@
 import LazyLoad from 'react-lazyload';
 import Skeleton from 'react-loading-skeleton';
-import { type Post } from '../../data/trendingPosts';
+import { type Post } from '@/data/trendingPosts';
 
 interface CarouselItemProps {
   post: Post;
@@ -18,7 +18,7 @@ const CarouselItem = ({ post }: CarouselItemProps) => {
         >
           <img
             alt='carousel slider image'
-            className='img-fluid h-auto max-h-[385px] w-full rounded-lg object-cover lg:w-[441px]'
+            className='img-fluid max-h-[386px] w-full rounded-lg lg:w-[441px]'
             src={post.image}
           />
         </LazyLoad>
