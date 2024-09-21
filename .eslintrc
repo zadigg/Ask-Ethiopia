@@ -33,7 +33,8 @@
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
-    "react-hooks/exhaustive-deps": "off"
+    "react-hooks/exhaustive-deps": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   },
   "ignorePatterns": [
     "node_modules",
