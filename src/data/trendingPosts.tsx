@@ -1,12 +1,10 @@
-// src/data/trendingPosts.ts
-
-interface Author {
+export interface Author {
   name: string;
   title: string;
   image: string;
 }
 
-interface TrendingPost {
+export interface Post {
   image: string;
   category: string;
   date: string;
@@ -15,7 +13,7 @@ interface TrendingPost {
   author: Author;
 }
 
-const trendingPosts: TrendingPost[] = [
+const trendingPosts: Post[] = [
   {
     image: 'https://picsum.photos/800/600',
     category: 'Business, Travel',

@@ -3,7 +3,7 @@
 declare module 'tiny-slider' {
   interface TinySliderSettings {
     container?: HTMLElement | string;
-    mode?: 'carousel' | 'gallery';
+    mode?: 'TrendingSection' | 'gallery';
     axis?: 'horizontal' | 'vertical';
     items?: number;
     gutter?: number;
