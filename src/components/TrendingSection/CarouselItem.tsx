@@ -8,7 +8,7 @@ interface CarouselItemProps {
 
 const CarouselItem = ({ post }: CarouselItemProps) => {
   return (
-    <div className='flex w-full flex-shrink-0 flex-col items-center md:flex-row  md:space-x-2  lg:items-stretch'>
+    <div className='mx-auto flex w-full flex-shrink-0 flex-col  items-center  md:space-x-2 lg:flex-row lg:items-stretch '>
       {/* Image Section */}
       <div className='mb-4 w-full lg:mb-0 lg:w-[489px]'>
         <LazyLoad
@@ -18,14 +18,14 @@ const CarouselItem = ({ post }: CarouselItemProps) => {
         >
           <img
             alt='carousel slider image'
-            className='img-fluid max-h-[386px] w-full rounded-lg lg:w-[441px]'
+            className='img-fluid mx-auto max-h-[386px] rounded-lg  md:w-[697px] '
             src={post.image}
           />
         </LazyLoad>
       </div>
 
       {/* Text Section */}
-      <div className='space-y- flex w-full flex-col justify-center pt-10  lg:w-3/5 '>
+      <div className='space-y- flex w-full flex-col justify-center pt-10  md:w-[697px]  lg:w-3/5'>
         <div className='mb-2'>
           <span className='category font-bold text-gray-800 hover:text-gray-600'>
             {post.category}

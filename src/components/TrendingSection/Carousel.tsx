@@ -26,7 +26,7 @@ const Carousel = ({
 
   return (
     <div
-      className='relative mx-auto w-full max-w-full overflow-hidden pb-16 lg:pb-0'
+      className='relative mx-auto w-full max-w-full overflow-hidden pb-16 lg:pb-0 '
       style={{ minHeight: '400px' }}
       {...handlers}
     >

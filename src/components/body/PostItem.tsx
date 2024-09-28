@@ -6,18 +6,18 @@ interface PostItemProps {
 
 const PostItem = ({ post }: PostItemProps) => {
   return (
-    <div className='post-entry flex flex-col'>
+    <div className='mx-auto flex  flex-col md:w-[697px]  lg:w-[300px] xl:w-[400px]'>
       <div className='mb-7'>
         <a href='single.html'>
           <img
             alt='Post Thumbnail'
-            className='img-fluid max-h-[386px] w-full rounded-lg lg:w-[400px]'
+            className='img-fluid mx-auto max-h-[386px] w-full rounded-lg  '
             src={post.image}
             loading='lazy'
           />
         </a>
       </div>
-      <div className='flex flex-col'>
+      <div className='flex flex-col '>
         <div className='mb-1 text-sm'>
           {post.categories.map((category, catIndex) => (
             <a
