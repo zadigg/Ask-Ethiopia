@@ -20,6 +20,12 @@ export default {
         '3xl': ['1.875rem', '2.25rem'],
         '4xl': ['2.25rem', '2.5rem'],
       },
+      container: {
+        center: true,
+        screens: {
+          lg: '1296px', // Set custom max-width for large screens
+        },
+      },
     },
   },
   plugins: [],

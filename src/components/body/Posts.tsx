@@ -3,7 +3,7 @@ import PostItem from './PostItem';
 
 const Posts = () => {
   return (
-    <div className='grid gap-20 lg:grid-cols-3'>
+    <div className='grid gap-y-20 lg:grid-cols-3'>
       {posts.map((post, index) => (
         <PostItem key={index} post={post} />
       ))}
