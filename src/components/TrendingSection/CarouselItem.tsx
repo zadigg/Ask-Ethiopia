@@ -8,7 +8,7 @@ interface CarouselItemProps {
 
 const CarouselItem = ({ post }: CarouselItemProps) => {
   return (
-    <div className='flex w-full flex-shrink-0 flex-col items-center md:space-x-2 lg:flex-row lg:items-stretch'>
+    <div className='flex w-full flex-shrink-0 flex-col items-center md:flex-row  md:space-x-2  lg:items-stretch'>
       {/* Image Section */}
       <div className='mb-4 w-full lg:mb-0 lg:w-[489px]'>
         <LazyLoad

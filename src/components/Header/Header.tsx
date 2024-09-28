@@ -13,12 +13,12 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div className='sticky top-0 z-50 bg-white'>
       {/* Mobile Menu */}
       <Sidebar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
 
       {/* Main Navigation */}
-      <nav className='w-full border-b border-gray-200 py-3'>
+      <nav className=' w-full border-b border-gray-200 py-3'>
         <div className='container mx-auto'>
           <div className='flex flex-wrap items-center justify-between'>
             {/* Logo */}
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
