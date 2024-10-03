@@ -1,42 +1,30 @@
-import { useState } from 'react';
+import Sidebar from './Sidebar';
 import Logo from './Logo';
 import SearchForm from './SearchForm';
 import SocialIcons from './SocialIcons';
 import BurgerMenuButton from './BurgerMenuButton';
-import Sidebar from './Sidebar';
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+interface HeaderProps {
+  isMenuOpen: boolean;
+  toggleMenu: () => void;
+}
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  return (
-    <div className='sticky top-0 z-50 bg-white'>
-      {/* Mobile Menu */}
-      <Sidebar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-
-      {/* Main Navigation */}
-      <nav className=' w-full border-b border-gray-200 py-3'>
-        <div className='container mx-auto'>
-          <div className='flex flex-wrap items-center justify-between'>
-            {/* Logo */}
-            <Logo />
-
-            {/* Search Form */}
-            <SearchForm />
-
-            {/* Social Icons and Burger Menu */}
-            <div className='mb-3 flex w-full items-center justify-end md:order-3 md:mb-0 md:w-1/4'>
-              <SocialIcons />
-              <BurgerMenuButton toggleMenu={toggleMenu} />
-            </div>
+const Header = ({ isMenuOpen, toggleMenu }: HeaderProps) => (
+  <div className='sticky top-0 z-50 bg-white'>
+    <Sidebar isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+    <nav className='mx-auto w-full border-b border-gray-200 py-3 md:w-[697px] lg:w-full'>
+      <div className='container mx-auto'>
+        <div className='flex flex-wrap items-center justify-between'>
+          <Logo />
+          <SearchForm />
+          <div className='mb-3 flex w-full items-center justify-end md:order-3 md:mb-0 md:w-1/4'>
+            <SocialIcons />
+            <BurgerMenuButton toggleMenu={toggleMenu} />
           </div>
         </div>
-      </nav>
-    </div>
-  );
-};
+      </div>
+    </nav>
+  </div>
+);
 
 export default Header;

@@ -1,7 +1,5 @@
-import { type Post } from '../../data/trendingPosts';
-
 interface CarouselDotsProps {
-  posts: Post[];
+  posts: any[];
   currentIndex: number;
   setCurrentIndex: (index: number) => void;
 }
@@ -10,20 +8,18 @@ const CarouselDots = ({
   posts,
   currentIndex,
   setCurrentIndex,
-}: CarouselDotsProps) => {
-  return (
-    <div className='absolute bottom-4 bottom-8 left-1/2 flex -translate-x-1/2 transform space-x-2 lg:bottom-4'>
-      {posts.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => setCurrentIndex(index)}
-          className={`h-2.5 w-2.5 rounded-full ${
-            index === currentIndex ? 'bg-gray-800' : 'bg-gray-400'
-          } hover:bg-gray-600`}
-        />
-      ))}
-    </div>
-  );
-};
+}: CarouselDotsProps) => (
+  <div className='my-6 flex justify-center space-x-2'>
+    {posts.map((_, index) => (
+      <span
+        key={index}
+        onClick={() => setCurrentIndex(index)}
+        className={`h-3 w-3 cursor-pointer rounded-full ${
+          currentIndex === index ? 'bg-gray-800' : 'bg-gray-400'
+        }`}
+      ></span>
+    ))}
+  </div>
+);
 
 export default CarouselDots;
